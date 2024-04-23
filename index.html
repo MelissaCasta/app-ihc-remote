@@ -9,28 +9,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Ejecución de órdenes</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </header>
-  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Identificador de Órdenes</a>
+  </nav>
 
-  <!-- Contenido principal de la aplicación -->
+  <div class="container mt-4">
+    <div class="jumbotron">
+      <h1 class="display-4">Identificador de Ordenes por Voz</h1>
+      <!--<p class="lead">Nota:</p>
+      <p class="lead">El reconocimiento de voz se activa al decir "Meli".</p> //Modificación realizada aquí 
+      <p class="lead">"Aumentar tamaño" y "Disminuir tamaño" son órdenes para manipular el texto.</p>
+      <p class="lead">"Nueva ventana" y "Cerrar ventana" son comandos para manipular las ventanas del navegador.</p> </p>-->
+      <br>
+      
+      <img src="qr.png" alt="Escanea el QR para ver la última orden" width="150" height="150"> <br>
+      <br><p class="lead">Escanea el QR para ver la última orden desde tu celulcar</p>
+
+
+      <p class="mt-4" id="result"></p>
+    </div>
+  </div>
+
   <div class="container mt-5">
-    <h1>Bienvenido a tu App de Voz</h1>
-    <p>Tu última orden fue</p>
-    <span class="form-control" id="orden">Abrir ventana</span>
+    <h1 id="controlTexto">Control de texto</h1>
+    <p id="IHC" style="font-size: 20px;">Interacción Humano a Computadora</p>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Tu última orden fue...</h1>
+    <span class="form-control" id="orden">última Orden</span>
 
   </div>
 
 
   <!-- Footer -->
-
+<br><br>
   <footer class="footer bg-light">
     <div class="container text-center">
       <span class="text-muted">© 2024 Tu App de Voz. Todos los derechos reservados.</span>
